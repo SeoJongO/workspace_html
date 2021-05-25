@@ -1,0 +1,29 @@
+body {font-family: "맑은 고딕"; font-size: 17px;}
+h1 {font-family: 궁서; font-size: 30px; letter-spacing: 15px;}
+h2 {font-size: 25px;}
+h3 {font-size: 20px;}
+th {background-color: #c8ebfa;}
+tbody tr:hover {background-color: #edd3ed;}
+
+.txt-int {font-style: italic; color: #0000ff; font-weight: bold;}
+.txt-sea {font-style: italic; color: #ff0000; font-weight: bold;}
+.txt-mil {font-weight: bold; color: #ff0000;}
+.txt-kind {font-weight: bold; color: #00ff00;}
+.txt-act {font-style: italic; color: #0000ff;}
+.txt-pro {font-weight: bold; color: #ff0000;}
+.txt-underG {text-decoration: underline; color: #00ff00;}
+.txt-under {text-decoration: underline;}
+.txt-backG {background-color: #d9d9d9;}
+.txt-backG p {text-indent: 30px;}
+
+.align-right {text-align: right;}
+.align-right::before {content: "약 ";}
+.align-right::after {content: " (MB/초)";}
+
+.list-squre {list-style-type: square;}
+.list-none {list-style-type: none;}
+
+a:visited {color: #000;}
+a:link {color: #000; text-decoration: none;}
+a:hover {color: #0000ff; text-decoration: underline;}
+a:active {color: #0000ff; text-decoration: underline;}

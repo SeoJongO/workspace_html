@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* 공통 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {margin: 0; padding: 0;}
+body {font-family: "맑은 고딕", 돋움; font-size: 12px;}
+ol, ul {list-style-type: none;}
+a:link {text-decoration: none; color: black;}
+a:visited {text-decoration: none; color: black;}
+a:active {text-decoration: none; color: black;}
+a:hover {text-decoration: none; color: black;}
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+/* 레이아웃 */
+#wrap {width: 1000px; margin: 0px auto;}
+#header {border-bottom: 1px solid #BFBFBF; padding: 0px 0px 5px 0px;}
+#nav {
+    background-color: white;
+    padding: 5px 0px 5px 0px;
+    border-bottom: 1px solid #BFBFBF;
+}
+#full-content {
+    background-color: rgba(0, 255, 0, 0.3);
+    padding: 15px 10px 15px 10px;
+}
+#list-content {
+    padding: 15px 0px 15px 0px;
+}
+#footer {
+    background-color: #dddddd;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+/* 해더 */
+#header h1>a {
+    font-size: 35px;
+    color: #79B308;
+    margin: 0px 0px 0px 0px;
+    float: left;
+}
+#header ul {
+    float: right;
+    margin: 15px 0px 0px 0px;
+}
+#header ul>li {
+    float: left;
+    margin: 0px 0px 0px 20px;
+    padding: 3px;
+    border: 1px solid #bfbfbf;
+    background-color: #efefef;
+    border-radius: 3px;
+}
+/* 네비게이션 */
+#nav ul>li {
+    float: left; 
+    width: 249px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-right: 1px solid #bfbfbf;
+}
+#nav ul>li.last {
+    border-right: none;
+}
+
+/* 게시판 */
+/* 사이드 */
+#list-content #aside{
+    float: left;
+    margin: 0px 20px 0px 0px;
+    width: 180px;
+}
+#list-content #aside h2 {
+    text-align: center;
+    background-color: #dddddd;
+    padding: 20px 15px 20px 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#list-content #aside ul>li {
+    border: 1px solid #a6a6a6;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 0px 0px 0px;
+    text-align: left;
+}
+#third_list, #first_list, #second_list {
+    background-color: #808080;
+}
+/* 메인헤드 */
+#list-content #main {
+    float: left;
+    width: 800px;
+}
+#list-content #main #main-head {
+    border-bottom: 1px solid #a6a6a6;
+    margin: 0px 0px 20px 0px;
+}
+#list-content #main #main-head h3 {
+    float: left;
+    font-size: 20px;
+    margin: 25px 0px 5px 0px;
+    font-weight: bold;
+}
+#list-content #main #main-head ul {
+    float: right;
+}
+#list-content #main #main-head ul>li {
+    float: left;
+    margin: 30px 5px 5px 0px;
+    font-size: 15px;
+}
+#list-content #main #main-head ul>li::after {
+    content: " >";
+}
+#list-content #main #main-head ul>li.last::after {
+    content: "";
+}

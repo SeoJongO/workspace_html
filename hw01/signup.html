@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./signup.css">
+        <title>회원가입</title>
+    </head>
+
+    <body>
+        <div id="signup">
+            <form action="signup.php" method="GET">
+                <!-- 아이디 -->
+                    <div class="signup-group">
+                        <label class="signup-text" for="txt-uid">아이디</label>
+                        <input id="txt-uid" type="text" name="uid" value="" placeholder="아이디를 입력하세요">
+                    </div>
+                <!-- 비밀번호 -->
+                    <div class="signup-group">
+                        <label class="signup-text" for="txt-upwd">패스워드</label>
+                        <input id="txt-upwd" type="password" name="upwd" value="" placeholder="패스워드를 입력하세요">
+                    </div>
+                <!-- 이름 -->
+                    <div class="signup-group">
+                        <label class="signup-text" for="txt-uname">이름</label>
+                        <input id="txt-uname" type="text" name="uname" value="" placeholder="이름을 입력하세요">
+                    </div>
+                <!-- 프로필사진 -->
+                    <div class="signup-group">
+                        <label class="signup-text" for="file-proimg">프로필사진</label>
+                        <input id="file-proimg" type="file" name="proimg">
+                    </div>
+                <!-- 주소 -->
+                    <div class="signup-group">
+                        <label class="signup-text" for="but-pnumber">주소</label>
+                        <input id="but-pnumber" type="text" name="postnumber" value="" placeholder="우편번호를 입력하세요">
+                        <button type="button">우편번호찾기</button> <br>
+                        <input id="but-address" type="text" name="address" value="" placeholder="상세주소를 입력하세요">
+                    </div>
+                <!-- 이동통신사 -->
+                    <div class="signup-group">
+                        <label class="signup-text" for="sel-telecom">이동통신사</label>
+                        <select id="sel-telecom" name="telecom">
+                            <option selected="selected">선택해주세요</option>
+                            <option value="SKT">SKT</option>
+                            <option value="KT">KT</option>
+                            <option value="LGU+">LGU+</option>
+                            <option value="etc">기타</option>
+                        </select> <br>
+                    </div>
+                <!-- 나이 -->
+                    <div class="signup-group">
+                        <span class="signup-text">나이</span>
+                        <label for="rdo-10">10대</label>
+                        <input id="rdo-10" type="radio" name="rdo-age" value="10">
+                        <label for="rdo-20">20대</label>
+                        <input id="rdo-20" type="radio" name="rdo-age" value="20" checked>
+                        <label for="rdo-30">30대</label>
+                        <input id="rdo-30" type="radio" name="rdo-age" value="30">
+                        <label for="rdo-40">40대</label>
+                        <input id="rdo-40" type="radio" name="rdo-age" value="40">
+                        <label for="rdo-etc">기타</label>
+                        <input id="rdo-etc" type="radio" name="rdo-age" value="etc">
+                    </div>
+                <!-- 취미 -->
+                    <div class="signup-group">
+                        <span class="signup-text">취미</span>
+                        <label for="chk-read">독서</label>
+                        <input id="chk-read" type="checkbox" name="chk-hobby" value="Read" checked>
+                        <label for="chk-music">음악</label>
+                        <input id="chk-music" type="checkbox" name="chk-hobby" value="Music">
+                        <label for="chk-trip">여행</label>
+                        <input id="chk-trip" type="checkbox" name="chk-hobby" value="Trip">
+                        <label for="chk-movie">영화</label>
+                        <input id="chk-movie" type="checkbox" name="chk-hobby" value="Movie">
+                        <label for="chk-coding">코딩</label>
+                        <input id="chk-coding" type="checkbox" name="chk-hobby" value="Coding">
+                        <label for="chk-etc">기타</label>
+                        <input id="chk-etc" type="checkbox" name="chk-hobby" value="ETC">
+                    </div>
+                <!-- 자기소개 -->
+                    <div class="signup-group">
+                        <label id="area-label" class="signup-text" for="area-si">자기소개</label>
+                        <textarea id="area-si" name="introduce" placeholder="5줄 이상 작성해주세요"></textarea>
+                    </div>
+                <!-- 버튼 -->
+                    <div class="signup-button">
+                        <button type="submit">등 록</button>
+                        <button type="reset">초기화</button>
+                    </div>
+            </form>
+        </div>
+    </body>
+</html>

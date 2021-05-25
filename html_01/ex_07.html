@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5</title>
+    </head>
+
+    <body>
+        <p>목차</p>
+        <ol>
+            <li><a href="./ex_01.html" target="_self">h1~h6</a></li>
+            <li><a href="./ex_02.html" target="_self">p br blockquote q strong b em i</a></li>
+            <li><a href="./ex_03.html" target="_self">ol ul li</a></li>
+            <li><a href="./ex_04.html" target="_self">img a</a></li>
+            <li><a href="./ex_05.html" target="_self">table thead tbody tr th td</a></li>
+            <li><a href="./ex_06.html" target="_self">colspan rowspan</a></li>
+            <li><a href="./ex_07.html" target="_self">thead tbody tfoot</a></li>
+            <li><a href="./ex_08.html" target="_self">테이블 종합 연습문제</a></li>
+        </ol>
+        <hr>
+
+        <h1>html태그</h1>
+        <h2>7. thead tbody tfoot </h2>
+
+        <table border="1">
+            <caption>기본 테이블태그로 만들기</caption>
+            <tr>
+                <td>구분</td>
+                <td>학교수</td>
+                <td>학급수</td>
+                <td>학생수</td>
+                <td>교원수</td>
+            </tr>
+            <tr>
+                <td>유치원</td>
+                <td>117</td>
+                <td>252</td>
+                <td>5547</td>
+                <td>474</td>
+            </tr>
+            <tr>
+                <td>초등학교</td>
+                <td>111</td>
+                <td>1720</td>
+                <td>37686</td>
+                <td>2632</td>
+            </tr>
+            <tr>
+                <td>중학교</td>
+                <td>44</td>
+                <td>699</td>
+                <td>21274</td>
+                <td>1412</td>
+            </tr>
+            <tr>
+                <td>합계</td>
+                <td>272</td>
+                <td>2671</td>
+                <td>64507</td>
+                <td>4518</td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <table border="1">
+            <caption>테이블태그 세분화</caption>
+            <caption><em>제주특별자치도 학교현황</em></caption>
+
+            <thead>
+                <tr>
+                    <th>구분</th>
+                    <th>학교수</th>
+                    <th>학급수</th>
+                    <th>학생수</th>
+                    <th>교원수</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>유치원</th>
+                    <td>117</td>
+                    <td>252</td>
+                    <td>5547</td>
+                    <td>474</td>
+                </tr>
+                <tr>
+                    <th>초등학교</th>
+                    <td>111</td>
+                    <td>1720</td>
+                    <td>37686</td>
+                    <td>2632</td>
+                </tr>
+                <tr>
+                    <th>중학교</th>
+                    <td>44</td>
+                    <td>699</td>
+                    <td>21274</td>
+                    <td>1412</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th>합계</th>
+                    <td>272</td>
+                    <td>2671</td>
+                    <td>64507</td>
+                    <td>4518</td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+        <br><br>
+
+        <table border="1">
+        <!--
+            <colgroup>
+                <col style="width: 120px">
+                <col style="width: 60px">
+                <col style="width: 60px">
+                <col style="width: 80px">
+                <col style="width: 100px">                
+            </colgroup>
+        -->
+            <colgroup>
+                <col style="width: 30%">
+                <col style="width: 10%">
+                <col style="width: 15%">
+                <col style="width: 20%">
+                <col style="width: 25%">                
+            </colgroup>
+            <caption>테이블 가로폭 설정</caption>
+            <caption><em>제주특별자치도 학교현황</em></caption>
+
+                <thead>
+                    <tr>
+                        <th>구분</th>
+                        <th>학교수</th>
+                        <th>학급수</th>
+                        <th>학생수</th>
+                        <th>교원수</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>유치원</th>
+                        <td>117</td>
+                        <td>252</td>
+                        <td>5547</td>
+                        <td>474</td>
+                    </tr>
+                    <tr>
+                        <th>초등학교</th>
+                        <td>111</td>
+                        <td>1720</td>
+                        <td>37686</td>
+                        <td>2632</td>
+                    </tr>
+                    <tr>
+                        <th>중학교</th>
+                        <td>44</td>
+                        <td>699</td>
+                        <td>21274</td>
+                        <td>1412</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th>합계</th>
+                        <td>272</td>
+                        <td>2671</td>
+                        <td>64507</td>
+                        <td>4518</td>
+                    </tr>
+                </tfoot>
+        </table>
+    </body>
+</html>

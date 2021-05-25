@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>게시판</title>
+        <link rel="stylesheet" href="./css/board.css">
+
+    </head>
+
+    <body>
+
+        <div id="board">
+
+            <form action="" method="GET">
+                
+                <!-- 게시판선택 -->
+                <div class="form-group">
+                    <label class="form-text" for="sel-board">게시판선택</label>
+                    <select id="sel-board" name="select">
+                        <option value="notice">공지사항</option>
+                        <option value="greeting">가입인사</option>
+                        <option value="humor">유머게시판</option>
+                        <option value="jop">취업게시판</option>
+                        <option value="etc">기타게시판</option>
+                    </select>
+                </div>
+                <!-- //게시판선택 -->
+
+                <!-- 제목 -->
+                <div class="form-group">
+                    <label class="form-text" for="tit-board" >제목</label>
+                    <input id="tit-board" type="text" name="title" value="">
+                </div>
+                <!-- //제목 -->
+
+                <!-- 비밀번호 -->
+                <div class="form-group">
+                    <label class="form-text" for="pwd-board">비밀번호</label>
+                    <input id="pwd-board" type="text" name="pwd" value="">
+                </div>
+                <!-- //비밀번호 -->
+
+                <!-- 공개범위 -->
+                <div class="form-group">
+                    <span class="form-text">공개범위</span>
+                    <label for="rad-me">본인</label>
+                    <input id="rad-me" type="radio" name="C_range" value="Me">
+                    <label for="rad-log">로그인회원</label>
+                    <input id="rad-log" type="radio" name="C_range" value="Log">
+                    <label for="rad-fri">친구</label>
+                    <input id="rad-fri" type="radio" name="C_range" value="Fri">
+                    <label for="rad-all">전체</label>
+                    <input id="rad-all" type="radio" name="C_range" value="All" checked>
+                </div>
+                <!-- //공개범위 -->
+
+                <!-- 허용범위 -->
+                <div class="form-group">
+                    <span class="form-text">허용범위</span>
+                    <label for="chk-dat">댓글허용</label>
+                    <input id="chk-dat" type="checkbox" name="A_range" value="Dat">
+                    <label for="chk-dap">답글허용</label>
+                    <input id="chk-dap" type="checkbox" name="A_range" value="Dap">
+                    <label for="chk-lik">좋아요허용</label>
+                    <input id="chk-lik" type="checkbox" name="A_range" value="Lik">
+                </div>
+                <!-- //허용범위 -->
+
+                <div class="form-group"></div>
+                    <button type="button">주소찾기</button>
+
+                <!-- 내용 -->
+                <div class="form-group">
+                    <textarea id="tarea-board" name="text" value=""></textarea>
+                </div>
+                <!-- //내용 -->
+
+                <!-- 첨부파일 -->
+                <div class="form-group">
+                    <label class="form-text" for="file-board">첨부파일</label>
+                    <input id="file-board" type="file" name="file" value="">
+                </div>
+                <!-- //첨부파일 -->
+
+                <!-- 버튼 -->
+                <div class="form-button">
+                    <button type="submit">등록</button>
+                    <button type="reset">초기화</button>
+                </div>
+                <!-- //버튼 -->
+
+            </form>
+
+        </div>
+
+    </body>
+
+</html>

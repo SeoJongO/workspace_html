@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../assets/css/common.css">
+        <link rel="stylesheet" href="../../assets/css/board.css">
+        <title></title>
+    </head>
+
+    <body>
+
+        <div id="wrap">
+
+            <!-- 해더 -->
+            <div id="header" class="clearfix">
+                <!-- 사이트로고 -->
+                <h1><a href="../main/main.html">MySite</a></h1>
+                <!-- 로그인, 회원가입 -->
+                <ul class="clearfix"> 
+                    <li><a href="../account/login.html">로그인</a></li>
+                    <li><a href="../account/signup.html">회원가입</a></li>
+                </ul>
+            </div>
+            <!-- //해더 -->
+
+            <!-- 네비게이션 -->
+            <div id="nav" class="clearfix">
+                <!-- 목록 -->
+                <ul class="clearfix">
+                    <li><a href="../application/application.html">입사지원서</a></li>
+                    <li><a href="../board/list.html">게시판</a></li>
+                    <li><a href="./gallery.html">갤러리</a></li>
+                    <li class="last"><a href="../guestbook/guestbook.html">방명록</a></li>
+                </ul>
+            </div>
+            <!-- //네비게이션 -->
+
+            <!-- 컨텐츠 -->
+            <div id="list-content" class="clearfix">
+
+                <!-- 왼쪽메뉴 -->
+                <div id="aside">
+                    <h2>갤러리</h2>
+                    <ul>
+                        <li><a href="./1_gallery.html">HTML</a></li>
+                        <li><a href="./2_gallery.html">CSS</a></li>
+                        <li id="third_list"><a href="./3_gallery.html">JAVA</a></li>
+                    </ul>
+                </div>
+                <!-- //왼쪽메뉴 -->
+
+                <!-- 메인 -->
+                <div id="main">
+
+                    <!-- 메인헤드 -->
+                    <div id="main-head" class="clearfix">
+                        <h3>JAVA</h3>
+                        <ul>
+                            <li>홈</li>
+                            <li>갤러리</li>
+                            <li class="last">JAVA</li>
+                        </ul>
+                    </div>
+                    <!-- //메인헤드 -->
+
+                    <!-- 메인바디 -->
+                    <div id="main-body" class="clearfix">
+
+                        <div id="board">
+
+                            <!-- 검색 -->
+                            <div id="search-area">
+                                <form action="#" method="GET">
+                                    <input  type="text" name="search" value="">
+                                    <button type="submit">검색</button>
+                                </form>
+                            </div>
+                            <!-- //검색 -->
+
+                            <!-- 리스트 -->
+                            <div id="table">
+                                <table>
+                                    <colgroup>
+                                        <col style="width: 10%;">
+                                        <col style="width: 50%">
+                                        <col style="width: 10%;">
+                                        <col style="width: 10%;">
+                                        <col style="width: 10%;">
+                                        <col style="width: 10%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>번호</th>
+                                            <th>제목</th>
+                                            <th>글쓴이</th>
+                                            <th>조회수</th>
+                                            <th>작성일</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>aaa</td>
+                                            <td>bbb</td>
+                                            <td>ccc</td>
+                                            <td>ddd</td>
+                                            <td>eee</td>
+                                            <td>삭제</td>
+                                        </tr>
+                                        <tr>
+                                            <td>aaa</td>
+                                            <td>bbb</td>
+                                            <td>ccc</td>
+                                            <td>ddd</td>
+                                            <td>eee</td>
+                                            <td>삭제</td>
+                                        </tr>
+                                        <tr>
+                                            <td>aaa</td>
+                                            <td>bbb</td>
+                                            <td>ccc</td>
+                                            <td>ddd</td>
+                                            <td>eee</td>
+                                            <td>삭제</td>
+                                        </tr>
+                                        <tr>
+                                            <td>aaa</td>
+                                            <td>bbb</td>
+                                            <td>ccc</td>
+                                            <td>ddd</td>
+                                            <td>eee</td>
+                                            <td>삭제</td>
+                                        </tr>
+                                        <tr>
+                                            <td>aaa</td>
+                                            <td>bbb</td>
+                                            <td>ccc</td>
+                                            <td>ddd</td>
+                                            <td>eee</td>
+                                            <td>삭제</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- //리스트 -->
+
+                            <!-- 페이징 -->
+                            <div id="pager">
+
+                                <ol class="clearfix">
+                                    <li><a href="">◀</a></li>
+                                    <li><a href="">1</a></li>
+                                    <li><a href="">2</a></li>
+                                    <li><a href="">3</a></li>
+                                    <li><a href="">4</a></li>
+                                    <li><a href="">5</a></li>
+                                    <li><a class="active" href="">6</a></li>
+                                    <li><a href="">7</a></li>
+                                    <li><a href="">8</a></li>
+                                    <li><a href="">9</a></li>
+                                    <li><a href="">10</a></li>
+                                    <li><a href="">▶</a></li>
+                                </ol>
+
+                                <a id="btn-write" href="../board/write.html">글쓰기</a>
+
+                            </div>
+                            <!-- //페이징 -->
+
+                        </div>
+
+                    </div>
+                    <!-- //메인바디 -->
+
+                </div>
+                <!-- //메인 -->
+
+            </div>
+            <!-- //컨텐츠 -->
+
+            <!-- 푸터 -->
+            <div id="footer">
+                <p>Copyright ©2021 서종오. All right reserved</p>
+            </div>
+            <!-- //푸터 -->
+
+        </div>
+
+    </body>
+
+</html>

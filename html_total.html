@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./html_total.css">
+        <title>HTML5 정리</title>
+
+        <style>
+            
+        </style>
+
+    </head>
+    <body>
+        <p><b>목차</b></p>
+            <ul>
+                <li><a href="#h">h</a></li>
+                <li><a href="#p">p</a></li>
+                <li><a href="#address">address</a></li>
+                <li><a href="#a">a</a></li>
+                <li><a href="#img">img</a></li>
+                <li><a href="#txt">txt</a></li>
+                <li><a href="#ol">ol</a></li>
+                <li><a href="#ul">ul</a></li>
+                <li><a href="#dl">dl</a></li>
+                <li><a href="#table">table</a></li>
+                <li><a href="#form">form</a></li>
+                <li><a href="#input">input</a></li>
+                <li><a href="#arsel">ar sel</a></li>
+                <li><a href="#formtype">formtype</a></li>
+                <li><a href="#group">group</a></li>
+                <li><a href="#layout">layout</a></li>
+                <li><a href="#media">media</a></li>
+            </ul>
+        <hr>
+
+        <h1 id="h" class="h1">제목 h1~h6</h1>
+            <ul>
+                <li><h1>h1 태그 입니다.</h1></li>
+                <li><h2>h2 태그 입니다.</h1></li>
+                <li><h3>h3 태그 입니다.</h1></li>
+                <li><h4>h4 태그 입니다.</h1></li>
+                <li><h5>h5 태그 입니다.</h5></li>
+                <li><h6>h6 태그 입니다.</h6></li>
+            </ul>
+
+        <h1 id="p" class="h1">문단 p</h1>
+            <p>p태그는 단락을 의미합니다.</p>
+            <pre>있는    그대로     나오게    하는    pre태그</pre>
+
+        <h1 id="address" class="h1">주소 address</h1>
+            <address>test@gmail.com</address>
+        
+        <h1 id="a" class="h1">링크 a</h1>
+            <a href="https://www.naver.com">네이버</a> <br>
+            <a href="./hw01/hw7.html">html연결</a> <br>
+            target="_ blank, self, parent, top"
+        
+        <h1 id="img" class="h1">이미지 img</h1>
+            <img src="./hw01/flagImg/Korea.jpg"> <br>
+            <img src="./hw01/flagImg/Kore.jpg" alt="alt=사진깨짐">
+            <!-- 하나의 이미지에 여러 링크는 map 태그 -->
+
+        <h1 id="txt" class="h1">텍스트 관련 요소</h1>
+            <em>강조/기울임</em> <br>
+            <strong>중요/굵은체</strong> <br>
+            <mark>주의깊게/노란색</mark> <br>
+            <b>의미없는굵음</b> <br>
+            <small>저작권 표시 등/작은글씨</small> <br>
+            <sub>아래첨자정의</sub> <br>
+            <sup>위첨자정의</sup> <br>
+
+        <h1 id="ol" class="h1">순서 목록 ol</h1>
+            <ol>
+                <li></li>
+                <li></li>
+            </ol>
+            <ol>
+                <li></li>
+            </ol>
+
+        <h1 id="ul" class="h1">비순서 목록 ul</h1>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul>
+                <li></li>
+            </ul>
+        <h1 id="dl" class="h1">설명 목록 dl</h1>
+            <dt>dt 태그</dt>
+            <dd>설명 목록의 용어 정의</dd>
+            <dt>dd 태그</dt>
+            <dd>용어에 대한 세부 설명</dd>
+
+        <h1 id="table" class="h1">표 관련 요소 및 속성</h1>
+            <table border="1">
+                <caption>caption 태그</caption>
+                <colgroup>
+                    <col width="10px">
+                    <col width="30px">
+                    <col width="50px">
+                </colgroup>
+                <tr>
+                    <th colspan="2">테이블</th>
+                    <th>테이블</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">테이블</td>
+                    <td>테이블</td>
+                    <td>테이블</td>
+                </tr>
+                <tr>
+                    <td>테이블</td>
+                    <td>테이블</td>
+                </tr>
+
+            </table>
+
+        <h1 id="form" class="h1">폼 관련 요소 및 주요 속성</h1>
+            <form action="join.php" method="get">
+            <!-- <form action="join.php" method="POST"></form> -->
+                <fieldset>
+                    <legend>로그인</legend>
+                    <p>ID : <input type="text"></p>
+                </fieldset>
+            <h1 id="input" class="h1">한줄 입력 요소 input</h1>
+                <input type="text">
+                <input type="password">
+                <input type="search">
+                <input type="email">
+                <input type="tel">
+                <input type="color">
+                <input type="number">
+                <input type="range">
+                <input type="radio">
+                <input type="checkbox">
+                <input type="submit">
+                <input type="reset">
+                <input type="button">
+                <input type="image" src="./jung.jpg1" alt="오류">
+                <input type="file">
+                <input type="hidden">
+            <h1 id="arsel" class="h1">여러 줄 입력 요소, 선택 요소</h1>
+                    <textarea></textarea>
+                    <select>
+                        <option>옵션</option>
+                    </select>
+            <h1 id="label" class="h1">폼 접근성 속성 label</h1>
+                    <label for="labeltest">label</label>
+                    <input id="labeltest" type="text">
+            <h1 id="formtype" class="h1">주요 입력 속성</h1>
+                    <input type="text" placeholder="placeholder">
+                    <input type="text" required="required">
+                    <input type="text" autocomplete="on">
+                    <input type="tel" pattern="\d{3}-\d{3,4}-\d{4}" required="required">
+                    <input type="file" multiple="multiple">
+                    <input type="email" multiple="multiple">
+                    <input type="text" disabled>
+                    <input type="text" readonly>
+                    <input type="submit" value="확인">
+        </form>
+        <h1 id="group" class="h1">그룹 요소</h1>
+            <div>블록 레벨 요소 div</div>
+            <span>인라인 요소</span>
+        <h1 id="layout" class="h1">구조 관련 요소</h1>
+            <header>
+                <h1><a href="#">반응형웹</a></h1>
+                <nav>
+                    <ul>
+                        <li>메뉴1</li>
+                        <li>메뉴2</li>
+                        <li>메뉴3</li>
+                        <li>메뉴4</li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="container">
+                <section>
+                    <h2>콘텐츠 그룹01</h2>
+                </section>
+                <section>
+                    <h2>콘텐츠 그룹02</h2>
+                </section>
+                <article>
+                    <h2>주요기사</h2>
+                </article>
+                <aside>광고</aside>
+            </div>
+            <footer>
+                <address>~주소 전화 이메일~</address>
+                <p>COPYRIGHT C</p>
+            </footer>
+
+        <h1 id="media" class="h1">미디어 요소</h1>
+            <audio controls>
+                <source src="#" type="audio/wav,ogg,mp3">
+            </audio>
+            <video controls poster="./jung.jpg" width="200px" height="200px">
+                <source src="#" type="video/mp4,webm,ogg">
+            </video>
+            <p>&lt;Entity Name(Code)&gt;</p>
+    </body>
+</html>

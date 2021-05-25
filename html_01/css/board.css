@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,
+h4,h5,h6,pre,code,form,fieldset,legend,
+input,textarea,p,blockquote,th,td
+{
+    margin:0;
+    padding:0;
+    font-family: "맑은 고딕", 돋움;
+    font-size: 12px;
+}
+
+/* 게시판 외곽 */
+
+#board {
+    width: 700px;
+    /* border: 1px solid black; */
+}
+
+/* 게시판 공통 */
+
+.form-group {
+    padding: 5px 0px 0px 0px;
+}
+
+.form-group .form-text {
+    width: 80px;
+    display: inline-block;
+}
+
+/* 속성 */
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 0px 20px 0px 0px;
+}
+
+#sel-board {
+    width: 150px;
+}
+
+#tit-board {
+    width: 600px;
+}
+
+#pwd-board {
+    width: 600px;
+
+}
+
+#tarea-board {
+    width: 685px;
+    height: 300px;
+}
+
+.form-button>button {
+    width: 60px;
+    padding: 5px;
+}
+
+.form-button {
+    border: 1px solid #e6e6e6;
+    padding: 10px 10px 10px 10px;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+

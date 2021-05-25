@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,
+h4,h5,h6,pre,code,form,fieldset,legend,
+input,textarea,p,blockquote,th,td
+{
+    font-family: "맑은 고딕", 돋움;
+}
+
+.h1 {
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    width: 600px;
+    text-align: center;
+}
+li a:hover {
+    background-color: pink;
+}

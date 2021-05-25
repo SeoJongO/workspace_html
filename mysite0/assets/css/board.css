@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* 메인바디 */
+/* 검색 */
+#board #search-area {
+    float: right;
+    margin: 0px 0px 10px 0px;
+}
+#board #search-area input[type="text"] {
+    width: 150px;
+    height: 25px;
+}
+#board #search-area button[type="submit"] {
+    padding: 3px 5px 3px 5px;
+}
+/* 게시판 */
+#board table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    text-align: center;
+}
+#board table>thead>tr>th {
+    background-color: #bfbfbf;
+}
+#board table>tbody>tr>td {
+    border-top: 1px dotted #808080;
+}
+#board table>tbody>tr>td, #board table>thead>tr>th {
+    padding: 5px 0px 5px 0px;
+}
+/* 페이징 */
+#board #pager{
+    text-align: center;
+}
+#board #pager ol {
+    width: 250px;
+    /* text-align은 인라인에만 적용 */
+    display: inline-block;
+    /* margin: 0px auto; */
+}
+#board #pager ol>li {
+    float: left;
+    margin: 10px 5px 0px 5px;
+}
+/* #board #pager ol>li>a.active{
+    font-size: 15px;
+    font-weight: bold;
+    color: #0000ff;
+} */
+/* 글쓰기 */
+#board #btn-write {
+    float: right;
+    border: 1px solid #808080;
+    background-color: #dddddd;
+    margin: 10px 0px 0px 0px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+}

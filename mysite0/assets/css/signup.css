@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* CSS초기화 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,
+h4,h5,h6,pre,code,form,fieldset,legend,
+input,textarea,p,blockquote,th,td
+{
+    margin:0;
+    padding:0;
+    font-family: "맑은 고딕", 돋움;
+    font-size: 12px;
+}
+
+/* 외곽 */
+#signup {
+    width: 1000px;
+}
+
+/* 공통 */
+.signup-group {
+    padding: 20px 0px 20px 0px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.signup-text {
+    width: 100px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+/* 자기소개 */
+#area-si {
+    width: 400px;
+    height: 100px;
+}
+#area-label {
+    vertical-align: top;
+}
+
+/* 주소 */
+#but-address {
+    margin: 5px 0px 0px 105px;
+    width: 400px;
+}
+/* 체크 */
+input[type="radio"], input[type="checkbox"] {
+    margin: 0px 10px 0px 0px;
+}
+
+/* 버튼 */
+.signup-button>button {
+    width: 60px;
+    padding: 5px;
+}
+.signup-button {
+    padding: 10px 10px 10px 10px;
+    margin: 20px 0px 0px 0px;
+    text-align: center;
+}
